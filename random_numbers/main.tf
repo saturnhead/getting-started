@@ -1,4 +1,4 @@
 resource "random_integer" "number" {
-  min = 1
-  max = 26
+  min = var.min_number
+  max = var.max_number
 }
