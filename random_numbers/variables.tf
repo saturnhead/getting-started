@@ -5,5 +5,5 @@ variable "min_number" {
 
 variable "max_number" {
     type = number 
-    default = 25
+    default = 26
 }
