@@ -11,5 +11,5 @@ output "numbers" {
 
 output "password" {
   sensitive = true
-  value = module.passwords.password
+  value = module.random_password.password
 }
