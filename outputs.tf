@@ -1,7 +1,15 @@
 output "greeting" {
-    value = templatefile("${path.module}/template_files/message.tftpl", {username = var.username})
+  value = templatefile("${path.module}/template_files/message.tftpl", {
+    username = var.username
+    }
+  )
 }
 
 output "numbers" {
-    value = module.numbers[*].passwords
+  value = module.numbers[*].numbers
+}
+
+output "password" {
+  sensitive = true
+  value = module.passwords.password
 }

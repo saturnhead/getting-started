@@ -1,0 +1,10 @@
+# The version of the configuration file format
+version: 1
+# Your module version - must be changed to release a new version
+module_version: 0.1.0
+# The set of tests to run to verify your module works correctly
+tests:
+  - name: Test the module
+    environment:
+      TF_VAR_password_length: 16
+      TF_VAR_password_override_special: true
