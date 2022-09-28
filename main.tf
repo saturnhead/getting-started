@@ -1,6 +1,6 @@
 module "numbers" {
   source = "./random_numbers"
-  count  = 5
+  count  = 6
 }
 
 # module "passwords" {
