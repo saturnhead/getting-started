@@ -1,6 +1,6 @@
 variable "password_length" {
     type = number
-    default = 14
+    default = 10
 }
 
 variable "password_override_special" {
